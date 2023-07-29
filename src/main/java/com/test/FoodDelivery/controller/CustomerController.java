@@ -31,7 +31,7 @@ public class CustomerController {
     public List<Customer> getAllCustomers(){
         return customerService.getAllCustomers();
     }
-    @GetMapping("customer/{id}/{contact}")
+    @PostMapping("customer/{id}/{contact}")
     public String updateCustomerbyId(@PathVariable Integer id,@PathVariable String contact){
         return customerService.updateCustomerbyId(id,contact);
     }
